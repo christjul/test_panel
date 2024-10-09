@@ -23,9 +23,11 @@ jobs:
       run: pip install -r requirements.txt
     - name: Build HTML
       run: |
-        panel convert enodise_database.py
-        mv enodise_database.html index.html
+        mkdir doc
+        panel convert --out doc enodise_database.py
+        mv doc/enodise_database.html doc/index.html
+        mv enodise_database.csv doc
     - name: Run ghp-import
       run: | 
         ls -l
-        ghp-import -n -p -f .
+        ghp-import -n -p -f doc
