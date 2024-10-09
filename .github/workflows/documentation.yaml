@@ -24,7 +24,7 @@ jobs:
     - name: Build HTML
       run: |
         mkdir doc
-        panel convert --out doc --requirements enodise_database.csv enodise_database.py
+        panel convert enodise_database.py --out doc --requirements enodise_database.csv 
         mv doc/enodise_database.html doc/index.html
     - name: Run ghp-import
       run: | 
