@@ -1,0 +1,22 @@
+# Compiled source
+*.pyc
+*.pyd
+*.so
+*.o
+__pycache__/
+
+# Jupyter notebook cache
+**/.ipynb_checkpoints
+
+# vim
+*.swp
+
+# PyCharm
+.idea/
+
+# virtual environments
+venv/
+.venv
+
+# VSCode
+.vscode/
