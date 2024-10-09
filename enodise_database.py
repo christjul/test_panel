@@ -5,7 +5,7 @@ import panel as pn
 
 PRIMARY_COLOR = "#E31244"
 SECONDARY_COLOR = "#F28F42"
-CSV_FILE = ("https://raw.githubusercontent.com/christjul/test_panel/main/enodise_database.csv")
+CSV_FILE = ("enodise_database.csv")
 PARAM = ['Configuration', 'Type', 'Author']
 PARAM_TECH = ['Experimental technique', 'Numerical technique']
 
