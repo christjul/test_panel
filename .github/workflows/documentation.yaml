@@ -26,6 +26,8 @@ jobs:
         mkdir doc
         panel convert enodise_database.py --out doc --requirements enodise_database.csv 
         mv doc/enodise_database.html doc/index.html
+        cp enodise_database.csv doc
+        ls doc
     - name: Run ghp-import
       run: | 
         ls -l
