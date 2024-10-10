@@ -41,7 +41,8 @@ option:disabled {
 def load_csv():
     response = requests.get(CSV_FILE)
     response.raise_for_status()  # Ensure we notice bad responses
-    data = response.content.decode('utf-8')  # Decode using utf-8
+    response.encoding = 'utf-8'  # Explicitly set encoding to utf-8
+    data = response.text
     df = pd.read_csv(io.StringIO(data), sep=';')
     return df
 
