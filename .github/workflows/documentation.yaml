@@ -24,7 +24,7 @@ jobs:
     - name: Build HTML
       run: |
         mkdir doc
-        panel convert enodise_database.py --to pyscript --out doc
+        panel convert enodise_database.py --to pyscript --out doc --disable-http-patch
         mv doc/enodise_database.html doc/index.html
         cp enodise_database.csv doc
         ls doc
