@@ -22,7 +22,7 @@ Refer to the two references cited below to obtain more information about the the
 The results for tonal and broadband noise are saved separately. The DLR results are saved into an h5 file, which can be read with e.g. python.
 
 Further details can be found in the file DLR_documentation_A1_A2.pptx";https://doi.org/10.5281/zenodo.8414424
-DLR;Numerical;A1 & A2;FALSE;FALSE;FALSE;TRUE;NA;FRPM;Configuration A1 and A2 Numerical Simulation Database;Acoustic predictions at 1 overhead array mic and 1 side array mic (90° Mic) for the Configuration A1 and A2 consisting of a propeller and a flat plate (A1) or an S-plate (A2) placed below it.;https://doi.org/10.5281/zenodo.13627852
+DLR;Numerical;A1 & A2;FALSE;FALSE;FALSE;TRUE;NA;FRPM;Configuration A1 and A2 Numerical Simulation Database;Acoustic predictions at 1 overhead array mic and 1 side array mic (90 deg Mic) for the Configuration A1 and A2 consisting of a propeller and a flat plate (A1) or an S-plate (A2) placed below it.;https://doi.org/10.5281/zenodo.13627852
 GPUP;Numerical;A2;FALSE;FALSE;FALSE;TRUE;NA;LES;Configuration A Numerical Databases with Mitigation\;"This dataset contains the numerical prediction for A2 configuration as defined in the H2020 ENODISE project (https://www.vki.ac.be/index.php/about-enodise)
 
 The dataset contains numerical simulation results for Band-Limited Overall Sound Pressure Level (BL-OASPL) for a rotor operating at inflow velocities of 15 m/s, 27 m/s, 45 m/s, 60 m/s, and 75 m/s with the rotation rate of 6500 RPM. Three setups are investigated with the rotor located at 1000mm, 800mm, and 480mm. The BL OASPL is obtained at 90-degree observer angle in an overhead array. These simulations are based on the experimental setup by the University of Bristol on the investigation of turbulence-ingestion-rotor noise. ";https://doi.org/10.5281/zenodo.13619109
@@ -90,7 +90,7 @@ RWTH;Numerical;B1;FALSE;FALSE;TRUE;TRUE;NA;LES;Numerical Aeroacoustic Database C
 
 The investigated operating point is:
 
-The incoming flow velocity Uinf = 30 m/s, the wing angle of attack AoA = 2 deg, the propeller advance ratio J = 0.8, and the relative blade phase angle between propellers ∆Φ = 0.
+The incoming flow velocity Uinf = 30 m/s, the wing angle of attack AoA = 2 deg, the propeller advance ratio J = 0.8, and the relative blade phase angle between propellers ∆Phi = 0.
 Wall-resolved Large eddy simulations (LES) of the configuration are performed based on the multiphysics flow solver m-AIA of RWTH.  The far-field noise is predicted by the Ffowcs-Williams and Hawkings (FW-H) method. The data set contains the time-averaged aerodynamic results predicted by the LES simulation and the aeroacoustic results calculated by the FW-H method. It should be noted that the aeroacoustic data is only a preliminary result and it will be updated soon.
 
 More details of the simulation and measurement setups are explained in the attached document ENODISE_B1_RWTH.pptx.";https://doi.org/10.5281/zenodo.8320292
@@ -99,8 +99,8 @@ ONERA;Numerical;B1;FALSE;TRUE;FALSE;TRUE;NA;ALM;Numerical Aeroacoustic Database 
 
 
 The two operating points that have been studied are:
-• Uinf = 30 m/s, J = 0.8, AoA = 2°, with a blade phase-angle Φ=0° between the middle and the side propellers
-• Uinf = 30 m/s, J = 0.8, AoA = 2°, with a blade phase-angle Φ=10° between the middle and the side propellers
+• Uinf = 30 m/s, J = 0.8, AoA = 2 deg, with a blade phase-angle Phi=0 deg between the middle and the side propellers
+• Uinf = 30 m/s, J = 0.8, AoA = 2 deg, with a blade phase-angle Phi=10 deg between the middle and the side propellers
 
 The present configuration follows the one described in TUD experimental contribution for configuration B1.
 
@@ -109,7 +109,7 @@ A synthetized description of the numerical method including some important detai
 The ONERA database contains numerical results about aerodynamic performances (thrust, torque and efficiency). It also includes pressure and sound pressure levels on the arcs microphones positions of TUD experimental configuration.
 Data are stored in .dat and .plt format files.";https://doi.org/10.5281/zenodo.8308001
 VKI;Numerical;B1;FALSE;TRUE;TRUE;TRUE;NA;URANS;Numerical Aeroacoustic Database of Configuration B1;This database represents the resultant data from a hybrid methodology consisting of aerodynamic simulations using uRANS and acoustic propagation simulations using FEM. The simulation of both the aerodynamic installation effects and the acoustic installation effects is available. The data from the aerodynamic simulations is given in the .cgns format and are in the Aerodynamic_Results folder. The resulting acoustic directivities from these sources using the FEM-Source Mode method are stored in the Acoustic_Results folder as .csv files. Both folders have a README file available with more details.;https://doi.org/10.5281/zenodo.8306236
-ONER A;Numerical;B2;FALSE;FALSE;FALSE;TRUE;NA;NA;Auralizations Configuration B2;"A quick evaluation of the SISW numerical data (https://zenodo.org/record/8176756) and the ECL experimental data (https://zenodo.org/record/7925336) was done on an auditory level through auralisations. The in-house auralisation tool FLAURA was used. Sound signatures were evaluated at the microphone positions 17 and 22 (at 90° to the propeller plane) for single and double propeller configurations, with and without flow.
+ONER A;Numerical;B2;FALSE;FALSE;FALSE;TRUE;NA;NA;Auralizations Configuration B2;"A quick evaluation of the SISW numerical data (https://zenodo.org/record/8176756) and the ECL experimental data (https://zenodo.org/record/7925336) was done on an auditory level through auralisations. The in-house auralisation tool FLAURA was used. Sound signatures were evaluated at the microphone positions 17 and 22 (at 90 deg to the propeller plane) for single and double propeller configurations, with and without flow.
 
 The database is composed of .wav files, presenting the measured temporal data (ECL) either compared to auralised measured spectral data (ECL) or simulated data (SISW).
 
