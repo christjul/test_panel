@@ -121,6 +121,7 @@ def filter_df(partner, typed, configuration, data_type, exp_tech, num_tech):
                        styles={'background': 'WhiteSmoke'})
         column.append(card)
 
+
     return column
 
 
