@@ -99,8 +99,8 @@ ONERA;Numerical;B1;FALSE;TRUE;FALSE;TRUE;NA;ALM;Numerical Aeroacoustic Database 
 
 
 The two operating points that have been studied are:
-• Uinf = 30 m/s, J = 0.8, AoA = 2 deg, with a blade phase-angle Phi=0 deg between the middle and the side propellers
-• Uinf = 30 m/s, J = 0.8, AoA = 2 deg, with a blade phase-angle Phi=10 deg between the middle and the side propellers
+- Uinf = 30 m/s, J = 0.8, AoA = 2 deg, with a blade phase-angle Phi=0 deg between the middle and the side propellers
+- Uinf = 30 m/s, J = 0.8, AoA = 2 deg, with a blade phase-angle Phi=10 deg between the middle and the side propellers
 
 The present configuration follows the one described in TUD experimental contribution for configuration B1.
 
