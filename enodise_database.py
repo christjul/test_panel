@@ -2,8 +2,7 @@ import hvplot.pandas
 import numpy as np
 import pandas as pd
 import panel as pn
-import requests
-import io
+
 
 PRIMARY_COLOR = "#E31244"
 SECONDARY_COLOR = "#F28F42"
@@ -39,10 +38,7 @@ option:disabled {
 
 # Function to fetch CSV file and load into pandas DataFrame
 def load_csv():
-    response = requests.get(CSV_FILE)
-    response.raise_for_status()  # Ensure we notice bad responses
-    data = response.content.decode('utf-8', errors='ignore')  # Decode using utf-8 and ignore errors
-    df = pd.read_csv(io.StringIO(data), sep=';')
+    df = pd.read_csv(CSV_FILE, sep=';', encoding='utf-8')
     return df
 
 # Load the CSV file
