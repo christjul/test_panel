@@ -90,7 +90,7 @@ RWTH;Numerical;B1;FALSE;FALSE;TRUE;TRUE;NA;LES;Numerical Aeroacoustic Database C
 
 The investigated operating point is:
 
-The incoming flow velocity Uinf = 30 m/s, the wing angle of attack AoA = 2 deg, the propeller advance ratio J = 0.8, and the relative blade phase angle between propellers ∆Phi = 0.
+The incoming flow velocity Uinf = 30 m/s, the wing angle of attack AoA = 2 deg, the propeller advance ratio J = 0.8, and the relative blade phase angle between propellers delta Phi = 0.
 Wall-resolved Large eddy simulations (LES) of the configuration are performed based on the multiphysics flow solver m-AIA of RWTH.  The far-field noise is predicted by the Ffowcs-Williams and Hawkings (FW-H) method. The data set contains the time-averaged aerodynamic results predicted by the LES simulation and the aeroacoustic results calculated by the FW-H method. It should be noted that the aeroacoustic data is only a preliminary result and it will be updated soon.
 
 More details of the simulation and measurement setups are explained in the attached document ENODISE_B1_RWTH.pptx.";https://doi.org/10.5281/zenodo.8320292
