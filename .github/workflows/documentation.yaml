@@ -24,7 +24,7 @@ jobs:
     - name: Build HTML
       run: |
         mkdir doc
-        panel convert enodise_database.py --out doc --requirements enodise_database.csv 
+        panel convert enodise_database.py --to pyodide --out doc
         mv doc/enodise_database.html doc/index.html
         cp enodise_database.csv doc
         ls doc
