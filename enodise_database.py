@@ -38,7 +38,7 @@ option:disabled {
 
 # Function to fetch CSV file and load into pandas DataFrame
 def load_csv():
-    df = pd.read_csv(CSV_FILE, sep=';', encoding='utf-8')
+    df = pd.read_csv(CSV_FILE, sep=';')
     return df
 
 # Load the CSV file
