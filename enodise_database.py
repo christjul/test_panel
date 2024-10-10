@@ -2,6 +2,8 @@ import hvplot.pandas
 import numpy as np
 import pandas as pd
 import panel as pn
+import asyncio
+import js
 
 PRIMARY_COLOR = "#E31244"
 SECONDARY_COLOR = "#F28F42"
@@ -29,11 +31,21 @@ option:disabled {
 
 
 
-@pn.cache
-def get_data():
-  return pd.read_csv(CSV_FILE, sep=';')
+# @pn.cache
+# def get_data():
+#   return pd.read_csv(CSV_FILE, sep=';')
 
-df = get_data()
+# df = get_data()
+
+# Function to fetch CSV file and load into pandas DataFrame
+async def load_csv():
+    response = await js.fetch(CSV_FILE)
+    data = await response.text()
+    df = pd.read_csv(pd.compat.StringIO(data), sep=';')
+    return df
+
+# Load the CSV file
+df = asyncio.run(load_csv())
 
 # Create a widget for each column to filter by unique values
 widget_list = []
