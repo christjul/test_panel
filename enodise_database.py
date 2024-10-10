@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import panel as pn
 import requests
+import io
 
 PRIMARY_COLOR = "#E31244"
 SECONDARY_COLOR = "#F28F42"
@@ -41,7 +42,7 @@ def load_csv():
     response = requests.get(CSV_FILE)
     response.raise_for_status()  # Ensure we notice bad responses
     data = response.text
-    df = pd.read_csv(pd.compat.StringIO(data), sep=';')
+    df = pd.read_csv(io.StringIO(data), sep=';')
     return df
 
 # Load the CSV file
