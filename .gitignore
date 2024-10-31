@@ -20,3 +20,6 @@ venv/
 
 # VSCode
 .vscode/
+
+# ignore doc folder
+doc/

@@ -32,12 +32,8 @@ option:disabled {
 
 
 
-# @pn.cache
-# def get_data():
-#   return pd.read_csv(CSV_FILE, sep=';')
 
-# df = get_data()
-
+@pn.cache
 # Function to fetch CSV file and load into pandas DataFrame
 def load_csv():
     with urllib.request.urlopen(CSV_FILE) as response:
