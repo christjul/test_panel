@@ -9,7 +9,7 @@ import io
 PRIMARY_COLOR = "#E31244"
 SECONDARY_COLOR = "#F28F42"
 
-CSV_FILE = 'https://raw.githubusercontent.com/christjul/test_panel/main/enodise_database.csv'
+CSV_FILE = 'https://www.vki.ac.be/enodise/enodise_database.csv'
 PARAM = ['Configuration', 'Type', 'Author']
 PARAM_TECH = ['Experimental technique', 'Numerical technique']
 
