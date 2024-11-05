@@ -10,6 +10,7 @@ PRIMARY_COLOR = "#E31244"
 SECONDARY_COLOR = "#F28F42"
 
 CSV_FILE = 'https://www.vki.ac.be/enodise/enodise_database.csv'
+
 PARAM = ['Configuration', 'Type', 'Author']
 PARAM_TECH = ['Experimental technique', 'Numerical technique']
 
@@ -78,7 +79,8 @@ def filter_df(partner, typed, configuration, data_type, exp_tech, num_tech):
         ]
 
     column = pn.Column()
-    column.append(pn.indicators.Number(name='Number of databases', value=filtered_df.shape[0]))
+    column.append(pn.Card(pn.pane.PNG('cases.png', sizing_mode='scale_width'), title='Illustration of cases', styles={'background': 'WhiteSmoke'}))
+    column.append(pn.indicators.Number(name='Number of databases', value=filtered_df.shape[0], format='{value}/31'))
 
     for i, fdf in filtered_df.iterrows():
         list_column_fdf = fdf.tolist()
